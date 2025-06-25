@@ -4,8 +4,9 @@ using UnityEngine;
 public class Raycaster : MonoBehaviour
 {
     private int _leftMouseButton = 0;
-    public event Action<Cube> CubeClicked;
     private int _layerMask;
+
+    public event Action<Cube> CubeClicked;
 
     private void Start()
     {

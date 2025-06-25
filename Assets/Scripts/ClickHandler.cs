@@ -46,8 +46,6 @@ public class ClickHandler : MonoBehaviour
             float explosionRadius = Mathf.Lerp(_maxExplosionRadius, _minExplosionRadius, scale);
 
             _exploder.Explode(position, newCubes, explosionForce, explosionRadius);
-            Debug.Log($"{explosionForce} Сила");
-            Debug.Log($"{explosionRadius} Радиус");
         }
 
         _deleter.DeleteCube(cube);
